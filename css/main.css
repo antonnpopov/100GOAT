@@ -28,19 +28,19 @@ img {
 
 /*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
 .container {
-    max-width: 1200px; /* МАКСИМАЛЬНАЯ ширина */
-    width: 100%; /* 100% на маленьких экранах */
+    max-width: 1200px;  ← ЗАМЕНИ НА ЭТО
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box; /* Важно! */
+    box-sizing: border-box;
 }
 
 /*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
 header {
     padding: 50px 0;
-    display: flex; /* Добавь это */
-    justify-content: space-between; /* Добавь это */
-    align-items: center; /* Добавь это */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*------------------------------------*/
 
@@ -64,15 +64,16 @@ header .logo {
     font-weight: 800;
 }
 
-header nav {
+/*header nav {
     float: right;
     width: 20%;
-}
+}*/
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    gap: 30px; /* больше расстояния */
+    align-items: center;
 }
 
 header nav ul li {
@@ -479,3 +480,4 @@ header nav ul li.btn a:hover {
         gap: 10px;
     }
 }
+

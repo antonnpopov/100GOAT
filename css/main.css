@@ -26,13 +26,27 @@ img {
     width: 100%;
 }
 
+/*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
 .container {
-    width: 1400px;
+    max-width: 1200px; /* МАКСИМАЛЬНАЯ ширина */
+    width: 100%; /* 100% на маленьких экранах */
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; /* Важно! */
 }
 
+/*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
 header {
     padding: 50px 0;
+    display: flex; /* Добавь это */
+    justify-content: space-between; /* Добавь это */
+    align-items: center; /* Добавь это */
+}
+/*------------------------------------*/
+
+header nav {
+    float: none; /* Убери float */
+    width: auto; /* Авто ширина */
 }
 
 header .logo img {
@@ -344,5 +358,64 @@ header nav ul li.btn a:hover {
 
     .hero--info br {
         display: none; /* убираем принудительные переносы */
+    }
+
+}
+
+/* ПЛАНШЕТЫ (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    .hero--info h1 {
+        font-size: 48px;
+    }
+    
+    .hero--info h2 {
+        font-size: 24px;
+    }
+    
+    .album-cover {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* МОБИЛЬНЫЕ И ПЛАНШЕТЫ В АЛЬБОМНОЙ ОРИЕНТАЦИИ */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    header nav ul {
+        justify-content: center;
+    }
+    
+    .hero--info h1 {
+        font-size: 36px;
+    }
+    
+    .hero--info h2 {
+        font-size: 20px;
+    }
+}
+
+/* ГОРИЗОНТАЛЬНАЯ ОРИЕНТАЦИЯ ТЕЛЕФОНА */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero--info {
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    
+    .hero--info h1 {
+        font-size: 32px;
+    }
+    
+    .hero--info img {
+        width: 150px;
     }
 }

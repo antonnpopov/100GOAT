@@ -28,7 +28,7 @@ img {
 
 /*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
 .container {
-    max-width: 1200px;  ← ЗАМЕНИ НА ЭТО
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -480,4 +480,5 @@ header nav ul li.btn a:hover {
         gap: 10px;
     }
 }
+
 

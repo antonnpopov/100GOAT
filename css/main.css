@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*ЗАДНИЙ ФОН*/
+.wrapper {
+    /*background: rgb(255, 234, 243);*/
+    background: rgb(238, 168, 192);
+    width: 100%;
+}
+
+/*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/*-------ПОПРАВИЛ ПО ШИРИНЕ-----------*/
+header {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*------------------------------------*/
+
+header nav {
+    padding-top: 20px;
+    float: none; /* Убери float */
+    width: auto; /* Авто ширина */
+}
+
+header .logo img {
+    
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 3px;
+    transform: scaleX(-1) rotate(5deg);
+}
+
+header .logo {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+/*header nav {
+    float: right;
+    width: 20%;
+}*/
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* больше расстояния */
+    align-items: center;
+    vertical-align: baseline;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header nav ul li.active {
+font-weight: 900;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background:rgb(157, 4, 63);
+    position: relative;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid rgb(157, 4, 63);
+}
+
+header nav ul li.btn a {
+    background: rgb(157, 4, 63);
+    padding: 9px 17px;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    color: white;
+}
+
+header nav ul li.btn a:hover {
+    background: rgb(120, 4, 48);
+}
+
+
+/* ЛЕНТА С АЛЬБОМАМИ */
+.albums-scroll-section {
+    margin-top: 20px;
+    padding: 20px 0;
+    background: rgb(238, 168, 192);
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+}
+
+.scroll-track-1 {
+    animation: scroll-left 40s linear infinite;
+}
+
+.scroll-track-2 {
+    animation: scroll-right 35s linear infinite;
+    margin-top: 30px;
+}
+
+.album-cover {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Бесшовная анимация влево */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Бесшовная анимация вправо */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* -------------------------------------------------------- */
+
+/* АНИМАЦИИ ДЛЯ ПОЯВЛЕНИЯ */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Последовательная задержка для элементов */
+.hero--info img {
+    transition-delay: 0.1s;
+}
+
+.hero--info h1 {
+    transition-delay: 0.3s;
+}
+
+.hero--info h2 {
+    transition-delay: 0.5s;
+}
+
+.hero--info p {
+    transition-delay: 0.7s;
+}
+
+.hero--info .btn {
+    transition-delay: 0.9s;
+}
+
+/*--------------------------*/
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero--info {
+    padding-top: 0px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+/*ОГРОМНЫЙ ИГОРЬ*/
+.hero--info img {
+    width: 300px;
+    height: auto;
+}
+
+
+.hero--info h1 {
+    background-image: url('../img/pattern.png');
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero--info h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.hero--info p {
+    margin-top: 30px;
+}
+
+.hero--info .btn {
+    margin-top: 30px;
+    background: rgb(157, 4, 63);
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero--info .btn a {
+    color: white; /* белый цвет текста */
+    text-decoration: none; /* убирает подчеркивание */
+}
+
+.hero--info .btn a:hover {
+    color: white; /* остается белым при наведении */
+}
+
+
+
+/* СПИСОК АЛЬБОМОВ КАК НА APPLE - ИСПРАВЛЕННЫЙ */
+
+
+/* ПОЗИЦИЯ APPLE MUSIC СПРАВА */
+.apple-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto; /* Выталкивает вправо */
+    min-width: 80px;
+    text-align: center;
+}
+
+.position-number {
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #D4AF37, #B8860B, #8B6914);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 6px rgba(139, 105, 20, 0.4);
+}
+
+.position-label {
+    font-size: 11px;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    max-width: 80px;
+    word-wrap: break-word;
+}
+
+/*------------------*/
+
+.albums-list-section {
+    padding: 80px 0;
+    background: rgb(238, 168, 192);
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.albums-grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Обновленный album-card */
+.album-card {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.album-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.album-number {
+    font-size: 40px;
+    font-weight: 800;
+    background-image: url('../img/pattern.png');
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    min-width: 70px;
+    text-align: center;
+}
+
+.album-cover-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.album-cover-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album-info {
+    flex: 1;
+    min-width: 0; /* Для правильного обрезания текста */
+}
+
+.album-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.album-artist {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.album-year {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Адаптивность для списка альбомов */
+@media (max-width: 1024px) {
+    .albums-grid {
+        padding: 0 30px;
+    }
+    
+    .album-card {
+        padding: 20px 25px;
+    }
+    
+    .album-number {
+        font-size: 28px;
+        min-width: 60px;
+    }
+    
+    .album-cover-small {
+        width: 90px;
+        height: 90px;
+        margin: 0 25px;
+    }
+    
+    .album-title {
+        font-size: 22px;
+    }
+    
+    .album-artist {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .albums-list-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .album-card {
+        padding: 18px 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .album-number {
+        font-size: 24px;
+        min-width: 50px;
+    }
+    
+    .album-cover-small {
+        width: 80px;
+        height: 80px;
+        margin: 0 20px;
+    }
+    
+    .album-title {
+        font-size: 20px;
+    }
+    
+    .album-artist {
+        font-size: 16px;
+    }
+    
+    .album-year {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-card {
+        padding: 15px;
+    }
+    
+    .album-number {
+        font-size: 20px;
+        min-width: 40px;
+    }
+    
+    .album-cover-small {
+        width: 70px;
+        height: 70px;
+        margin: 0 15px;
+    }
+    
+    .album-title {
+        font-size: 18px;
+    }
+    
+    .album-artist {
+        font-size: 14px;
+    }
+    
+    .album-year {
+        font-size: 12px;
+    }
+}
+
+/* Для очень узких экранов */
+@media (max-width: 360px) {
+    .album-card {
+        padding: 12px;
+    }
+    
+    .album-number {
+        font-size: 18px;
+        min-width: 35px;
+    }
+    
+    .album-cover-small {
+        width: 60px;
+        height: 60px;
+        margin: 0 12px;
+    }
+    
+    .album-title {
+        font-size: 16px;
+    }
+}
+
+/* Убираем горизонтальный скролл */
+body {
+    overflow-x: hidden;
+}
+
+
+/* -------------------------------МОБИЛЬНАЯ АДАПТАЦИЯ --------------------------*/
+/* ПЛАНШЕТЫ (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    header {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero--info h1 {
+        font-size: 48px;
+        margin-bottom: 15px; /* Добавил отступ */
+    }
+    
+    .hero--info h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin: 15px 0; /* Добавил отступы */
+    }
+    
+    .album-cover {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* УВЕЛИЧИВАЕМ ОТСТУПЫ В HEADER */
+    header .logo {
+        font-size: 24px;
+        margin-right: 20px; /* Отступ от навигации */
+    }
+    
+    header nav ul {
+        gap: 20px; /* Больше расстояния между пунктами */
+    }
+}
+
+/* ПЛАНШЕТЫ И МОБИЛЬНЫЕ В АЛЬБОМНОЙ ОРИЕНТАЦИИ (900px и меньше) */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 25px; /* Увеличил отступ между лого и навигацией */
+        text-align: center;
+        padding: 25px 0;
+    }
+    
+    header .logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    header nav ul {
+        justify-content: center;
+        gap: 20px; /* Сохраняем отступы */
+    }
+    
+    .hero--info h1 {
+        font-size: 36px;
+        margin: 20px 0; /* Отступы вокруг заголовка */
+    }
+    
+    .hero--info h2 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}
+
+/* МОБИЛЬНЫЕ (до 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 20px 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Отступ между лого и навигацией */
+    }
+
+    header .logo {
+        font-size: 20px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    header .logo img {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li.btn a {
+        padding: 10px 18px; /* Увеличил кнопку */
+        font-size: 14px;
+        margin-left: 5px; /* Отступ от других пунктов */
+    }
+
+    /* Лента альбомов для мобильных */
+    .album-cover {
+        width: 120px;
+        height: 120px;
+    }
+
+    .scroll-track {
+        gap: 15px;
+    }
+
+    .scroll-track-2 {
+        margin-top: 15px;
+    }
+
+    /* Герой секция */
+    .hero--info {
+        margin-top: -30px;
+    }
+
+    .hero--info img {
+        width: 200px;
+        margin-bottom: 20px; /* Отступ под картинку */
+    }
+
+    .hero--info h1 {
+        font-size: 32px;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+        margin: 15px 0; /* Отступы */
+    }
+
+    .hero--info h2 {
+        font-size: 18px;
+        margin: 15px 0; /* Упорядочил отступы */
+        line-height: 1.4;
+    }
+
+    .hero--info p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .hero--info .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        margin-top: 20px; /* Отступ сверху */
+    }
+
+    .hero {
+        padding-bottom: 50px;
+    }
+}
+
+/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) */
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 18px;
+    }
+
+    header nav ul {
+        gap: 12px; /* Немного уменьшил, но не слишком */
+    }
+    
+    header nav ul li.btn a {
+        padding: 8px 15px;
+        margin-left: 0;
+    }
+
+    header nav ul li:not(.btn) {
+        font-size: 14px;
+    }
+
+    .album-cover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero--info h1 {
+        font-size: 28px;
+    }
+
+    .hero--info h2 {
+        font-size: 16px;
+    }
+
+    .hero--info br {
+        display: none;
+    }
+}
+
+/* ГОРИЗОНТАЛЬНАЯ ОРИЕНТАЦИЯ ТЕЛЕФОНА */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero--info {
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    
+    .hero--info h1 {
+        font-size: 32px;
+        margin: 10px 0;
+    }
+    
+    .hero--info img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    
+    /* HEADER в горизонтальной ориентации */
+    header {
+        flex-direction: row; /* Возвращаем в строку */
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    header .logo {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    header nav ul {
+        gap: 10px;
+    }
+}

@@ -416,6 +416,16 @@ header nav ul li.btn a:hover {
     font-weight: 400;
 }
 
+.apple-position-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.apple-position-link:hover .position-number {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 /* Адаптивность для списка альбомов */
 @media (max-width: 1024px) {
     .albums-grid {

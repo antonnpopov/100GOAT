@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'Oleho Senthor Trial';
-    src: url('/webfonts/OlehoSenthorTrial.otf') format('opentype'),
-         url('/webfonts/OlehoSenthorTrial.ttf') format('truetype');
+    src: url('../webfonts/OlehoSenthorTrial.otf') format('opentype'),
+         url('../webfonts/OlehoSenthorTrial.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* чтобы текст не "моргал" при загрузке */
@@ -13,9 +13,9 @@
 
 @font-face {
     font-family: 'Novox Melted Stacked';
-    src: url('/webfonts/NovoxMeltedStacked.woff2') format('woff2'), /* Самый современный и быстрый */
-         url('/webfonts/NovoxMeltedStacked.woff') format('woff'),   /* Для старых браузеров */
-         url('/webfonts/NovoxMeltedStacked.ttf') format('truetype'); /* Фолбэк на всякий случай */
+    src: url('../webfonts/NovoxMeltedStacked.woff2') format('woff2'), /* Самый современный и быстрый */
+         url('../webfonts/NovoxMeltedStacked.woff') format('woff'),   /* Для старых браузеров */
+         url('../webfonts/NovoxMeltedStacked.ttf') format('truetype'); /* Фолбэк на всякий случай */
     font-weight: normal; /* Проверь, какой вес у шрифта */
     font-style: normal;
     font-display: swap; /* Чтобы текст не "моргал" при загрузке */
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'BreakSecret';
-    src: url('/webfonts/BreakSecret.otf') format('opentype'); /* Самый современный и быстрый */
+    src: url('../webfonts/BreakSecret.otf') format('opentype'); /* Самый современный и быстрый */
     font-weight: normal; /* Проверь, какой вес у шрифта */
     font-style: normal;
     font-display: swap; /* Чтобы текст не "моргал" при загрузке */
@@ -1282,4 +1282,5 @@ html {
 
 .close-modal:hover {
     color: #FF6B6B;
+
 }

@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100GOATALBUMS</title>
-    <link rel="preload" href="webfonts/OlehoSenthorTrial.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="webfonts/OlehoSenthorTrial.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/wrapped.css">
     <link rel="icon" type="image/png" href="img/ant_logo_realpng.png">
@@ -36,7 +34,10 @@
                 </h1>
                 <h2>Итоги года<br>с antidemidovich online</h2>
                 <p>Тир-листы альбомов за каждый год, начиная с 2024</p>
-                <button class="btn"><a href="#tier-list-2025">2025</a></button>
+                <div class="year-buttons">
+                    <button class="btn"><a href="#tier-list-2025">2025</a></button>
+                    <button class="btn"><a href="#tier-list-2024">2024</a></button>
+                </div>
             </div>
         </div>
         
@@ -48,26 +49,9 @@
                 <div class="tier-row tier-s">
                     <div class="tier-header">S</div>
                     <div class="tier-content">
-                        <div class="album-wr" data-album="imaginal-disk" data-audio="путь_к_треку.mp3">
-                            <img src="albums/imaginal_disk.jpg" alt="Imaginal Disk">
-                            <div class="album-wr-info">
-                                <div class="album-name">Imaginal Disk</div>
-                                <div class="artist-name">Magdalena Bay</div>
-                            </div>
-                            
-                            <!-- Окно внутри album-wr, чтобы позиционировалось относительно него -->
-                            <div class="platforms-modal">
-                                <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
-                                    <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
-                                </div>
-                            </div>
+                        <div class="empty-notice">
+                            <p>ПУСТО...</p>
                         </div>
-                        <!-- Согласно твоему распределению: "Прошлогодний Imaginal Disk задал слишком высокую планку, поэтому ПУСТО" -->
                     </div>
                 </div>
                 
@@ -83,17 +67,15 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
-                                    <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
+                                    <!-- Всегда первой идет кнопка YouTube Music -->
+                                    <a href="https://youtube.com/playlist?list=OLAK5uy_kcrj68_rjXKEybzDV6S4_dH_KcVpQe8IQ&si=8nAeDeb4zDEpyUij" target="_blank" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_755_34e3beb619ad6697dc" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://open.spotify.com/album/6o6VAIetIFOsaOa0qt7w9u?si=mB_oOxPPS9iLTsn2pZAo7Q" target="_blank" class="platform-btn spotify"></a>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="dont-tap-the-glass" data-audio="/audio_wrapped/2025/tyler_the_creator-sugar_on_my_tongue.mp3#45#77">
+                        <div class="album-wr" data-album="dont-tap-the-glass" data-audio="audio_wrapped/2025/tyler_the_creator-sugar_on_my_tongue.mp3#45#77">
                             <img src="albums_wrapped/2025/tyler_the_creator-dont_tap_the_glass.PNG" alt="DON'T TAP THE GLASS">
                             <div class="album-wr-info">
                                 <div class="album-name">DON'T TAP THE GLASS</div>
@@ -101,12 +83,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/362710301_78_cc8b3fe55a921d59c4" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
                                     <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -119,12 +99,11 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/362710301_77_bbd1d1890f82313a83" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/37046383?ref_id=8C9BE0A7-057C-4158-BA71-D4023F78FBD5" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
                                     <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -143,12 +122,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-214785279_260_7139fdc812170ce349" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/35111063?ref_id=16364886-A60E-4103-BB5F-67503E1FA373" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -161,12 +138,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_803_33703bd874ad957683" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -179,12 +153,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_1137_b4552356d10deb698c" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -197,12 +168,8 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -213,7 +180,6 @@
                 <div class="tier-row tier-c">
                     <div class="tier-header">C</div>
                     <div class="tier-content">
-                        <!-- Начнем добавлять альбомы для тира C -->
                         <div class="album-wr" data-album="debi-tirar-mas-fotos" data-audio="audio_wrapped/2025/bad_bunny-eoo.mp3#18#47">
                             <img src="albums_wrapped/2025/bad_bunny-debi_tirar_mas_fotos.JPG" alt="DeBÍ TiRAR MáS FOToS">
                             <div class="album-wr-info">
@@ -222,12 +188,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_237_3a8c2ec3104180fccc" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -240,12 +203,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-23995866_85299572_a3289d414d71eb4dce" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -258,12 +218,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-25460145_84982466_e6615627e16370eae8" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/35219103?ref_id=AF708DE7-1F33-43E8-8067-C92FD0BE2291" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -276,12 +234,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-228289903_1075_5d911c4ee70b58c0fd" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -294,12 +249,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-16120134_85410474_4e3bfd383be26511cb" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/38478378?ref_id=75B90F01-4D82-4EC9-B692-B1931FE0CF22" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -312,12 +265,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-218946932_1958_bda37da257aa6b047a" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -330,12 +280,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-12256840_84660191_4ddb8189455179e8ee" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/37196930?ref_id=B1D0654E-080D-4967-8741-BCEE8D95B601" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -348,12 +296,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-39493151_67943114_b3cee8ecdae3e6ec04" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -366,12 +311,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-230946805_307_52c4f982ae1ad980fa" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/38374584?ref_id=2293A25C-795C-4514-BFA4-C22BEA38AFD6" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -384,12 +327,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-16962_54353748_dc3a5769fb39b85b80" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -402,12 +342,9 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-201729654_420_b60bcf029074d8a496" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -418,7 +355,7 @@
                 <div class="tier-row tier-d">
                     <div class="tier-header">D</div>
                     <div class="tier-content">
-                        <div class="album-wr" data-album="balloonerism" data-audio="audio/2025/mac_miller.mp3">
+                        <div class="album-wr" data-album="balloonerism" data-audio="audio_wrapped/2025/mac_miller-stoned.mp3#55#92">
                             <img src="albums_wrapped/2025/mac_miller-balloonerism.JPG" alt="Balloonerism">
                             <div class="album-wr-info">
                                 <div class="album-name">Balloonerism</div>
@@ -426,17 +363,15 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-214785279_889_3a6e7fa5e47e707894" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/34988383?ref_id=AA56129E-53E7-4697-AF12-C3782CAE4CB0" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="ruby" data-audio="audio/2025/jennie.mp3">
+                        <div class="album-wr" data-album="ruby" data-audio="audio_wrapped/2025/jennie-extral.mp3#41#75">
                             <img src="albums_wrapped/2025/jennie_ruby.JPG" alt="Ruby">
                             <div class="album-wr-info">
                                 <div class="album-name">Ruby</div>
@@ -444,17 +379,14 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/809709047_609_181016466a452aad46" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="mayhem" data-audio="audio/2025/lady_gaga.mp3">
+                        <div class="album-wr" data-album="mayhem" data-audio="audio_wrapped/2025/lady_gaga-abracadabra.mp3#78#108">
                             <img src="albums_wrapped/2025/lady_gaga-mayhem.JPG" alt="MAYHEM">
                             <div class="album-wr-info">
                                 <div class="album-name">MAYHEM</div>
@@ -462,17 +394,15 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/646446627_482_fbd7a9143a8ffd419f" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/38079334?ref_id=EA8DAFFA-215C-4C29-BFFF-03DA893DA9FD" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="addison" data-audio="audio/2025/addison_rae.mp3">
+                        <div class="album-wr" data-album="addison" data-audio="audio_wrapped/2025/addison_rae-high_fashion.mp3#26#58">
                             <img src="albums_wrapped/2025/addison_rae-addison.JPG" alt="Addison">
                             <div class="album-wr-info">
                                 <div class="album-name">Addison</div>
@@ -480,17 +410,14 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-218946932_2013_222cf5b95d59592819" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="baby" data-audio="audio/2025/dijon.mp3">
+                        <div class="album-wr" data-album="baby" data-audio="audio_wrapped/2025/dijon-yamaha.mp3#27#60">
                             <img src="albums_wrapped/2025/dijon_baby.JPG" alt="Baby">
                             <div class="album-wr-info">
                                 <div class="album-name">Baby</div>
@@ -498,17 +425,14 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_846_9f7e407a93ef63cba2" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="essex-honey" data-audio="audio/2025/blood_orange.mp3">
+                        <div class="album-wr" data-album="essex-honey" data-audio="audio_wrapped/2025/blood_orange-mind_loaded.mp3#66#100">
                             <img src="albums_wrapped/2025/blood_orange-essex_honey.JPG" alt="Essex Honey">
                             <div class="album-wr-info">
                                 <div class="album-name">Essex Honey</div>
@@ -516,17 +440,14 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_892_a45ef8b7861b64fbc6" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="eusexua-afterglow" data-audio="audio/2025/fka_twigs2.mp3">
+                        <div class="album-wr" data-album="eusexua-afterglow" data-audio="audio_wrapped/2025/fka_twigs-hard.mp3#18#52">
                             <img src="albums_wrapped/2025/fka_twigs-eusexua_afterglow.JPG" alt="EUSEXUA Afterglow">
                             <div class="album-wr-info">
                                 <div class="album-name">EUSEXUA Afterglow</div>
@@ -534,12 +455,8 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -550,7 +467,7 @@
                 <div class="tier-row tier-e">
                     <div class="tier-header">E</div>
                     <div class="tier-content">
-                        <div class="album-wr" data-album="jonatan" data-audio="audio/2025/yung_lean.mp3">
+                        <div class="album-wr" data-album="jonatan" data-audio="audio_wrapped/2025/yung_lean-babyface_maniacs.mp3#54#89">
                             <img src="albums_wrapped/2025/yung_lean-jonatan.PNG" alt="Jonatan">
                             <div class="album-wr-info">
                                 <div class="album-name">Jonatan</div>
@@ -558,17 +475,14 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/album/-2000068247_24068247_93a0d19e4cf5305bdf" target="_blank" class="platform-btn vk"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="album-wr" data-album="mans-best-friend" data-audio="audio/2025/sabrina_carpenter.mp3">
+                        <div class="album-wr" data-album="mans-best-friend" data-audio="audio_wrapped/2025/sabrina_carpenter-tears.mp3#54#88">
                             <img src="albums_wrapped/2025/sabrina_carpenter-mans_best_friend.JPG" alt="Man's Best Friend">
                             <div class="album-wr-info">
                                 <div class="album-name">Man's Best Friend</div>
@@ -576,12 +490,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-230946805_208_33225e764a71c958db" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/37999752?ref_id=D958A10A-1A9B-43FB-BCCF-BA7EF12A6C98" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -592,7 +504,7 @@
                 <div class="tier-row tier-f">
                     <div class="tier-header">F</div>
                     <div class="tier-content">
-                        <div class="album-wr" data-album="music" data-audio="audio/2025/playboi_carti.mp3">
+                        <div class="album-wr" data-album="music" data-audio="audio_wrapped/2025/playboi_carti-evil_jordan.mp3#56#86">
                             <img src="albums_wrapped/2025/playboi_carti-music.JPG" alt="MUSIC">
                             <div class="album-wr-info">
                                 <div class="album-name">MUSIC</div>
@@ -600,12 +512,10 @@
                             </div>
                             <div class="platforms-modal">
                                 <div class="modal-content">
-                                    <!-- Убрали заголовок "Где послушать?" -->
-                                    <a href="#" class="platform-btn vk"></a>
-                                    <a href="#" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="https://vk.com/music/playlist/-227983439_398_2360e563a9a922baee" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/35867704?ref_id=0E1CBF67-7796-43D1-9CF3-A080A8F7531F" target="_blank" class="platform-btn yandex"></a>
                                     <a href="#" class="platform-btn spotify"></a>
-                                    <a href="#" class="platform-btn telegram"></a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -613,6 +523,408 @@
                 </div>
             </div>
         </div>
+
+        <div class="tier-list-section" id="tier-list-2024">
+            <h2 class="tier-list-title">2024</h2>
+            
+            <div class="tier-list">
+                <!-- Тир S -->
+                <div class="tier-row tier-s">
+                    <div class="tier-header">S</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="imaginal-disk-2024" data-audio="audio_wrapped/2024/magdalena_death_&_romance.mp3#54#94">
+                            <img src="albums_wrapped/2024/magdalena_bay-imaginal_disk.jpg" alt="Imaginal Disk">
+                            <div class="album-wr-info">
+                                <div class="album-name">Imaginal Disk</div>
+                                <div class="artist-name">Magdalena Bay</div>
+                            </div>
+                            
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир A -->
+                <div class="tier-row tier-a">
+                    <div class="tier-header">A</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="gnx" data-audio="audio_wrapped/2024/kendrick_lamar-tv_off.mp3#124#153">
+                            <img src="albums_wrapped/2024/kendrick_lamar-gnx.jpg" alt="GNX">
+                            <div class="album-wr-info">
+                                <div class="album-name">GNX</div>
+                                <div class="artist-name">Kendrick Lamar</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/34123013?ref_id=20F7960D-6E1E-4170-9946-03F528FD25E7" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="brat" data-audio="audio_wrapped/2024/charli_xcx-von_dutch.mp3#29#66">
+                            <img src="albums_wrapped/2024/charki_xcx-brat.jpg" alt="Brat">
+                            <div class="album-wr-info">
+                                <div class="album-name">Brat</div>
+                                <div class="artist-name">Charli XCX</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31587007?ref_id=AB717FFE-7ECA-45A5-AE89-D7E5178E6334" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир B -->
+                <div class="tier-row tier-b">
+                    <div class="tier-header">B</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="dark-times" data-audio="audio_wrapped/2024/vince_staples-etouffee.mp3#52#90">
+                            <img src="albums_wrapped/2024/vince_staples-dark_times.JPG" alt="Dark Times">
+                            <div class="album-wr-info">
+                                <div class="album-name">Dark Times</div>
+                                <div class="artist-name">Vince Staples</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31362515?ref_id=6F1F3281-183D-4A56-ADF8-41F04E545C98" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="hit-me-hard-and-soft" data-audio="audio_wrapped/2024/billie_eilish-the_greatest.mp3#191#230">
+                            <img src="albums_wrapped/2024/billie_eilish-hit_me_hard_and_soft.jpg" alt="HIT ME HARD AND SOFT">
+                            <div class="album-wr-info">
+                                <div class="album-name">HIT ME HARD AND SOFT</div>
+                                <div class="artist-name">Billie Eilish</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31266458?ref_id=CB0116E2-7619-4E2C-9B17-376578C97015" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="chromakopia" data-audio="audio_wrapped/2024/tyler_the_creator-st_chroma.mp3#100#150">
+                            <img src="albums_wrapped/2024/tyler_the_creator-chromakopia.jpg" alt="Chromakopia">
+                            <div class="album-wr-info">
+                                <div class="album-name">Chromakopia</div>
+                                <div class="artist-name">Tyler, The Creator</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир C -->
+                <div class="tier-row tier-c">
+                    <div class="tier-header">C</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="for-cryin-out-loud" data-audio="audio_wrapped/2024/finneas_whats_it_gonna_take_to_break_your_heart.mp3#127#168">
+                            <img src="albums_wrapped/2024/finneas-for_cryin_out_loud.JPG" alt="For Cryin' Out Loud!">
+                            <div class="album-wr-info">
+                                <div class="album-name">For Cryin' Out Loud!</div>
+                                <div class="artist-name">FINNEAS</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/33533086?ref_id=55C50A44-4D0F-4E1D-8EFC-CB363F52C1D9" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="i-lay-down-my-life-for-you" data-audio="audio_wrapped/2024/jpegmafia-sin_miedo.mp3#46#80">
+                            <img src="albums_wrapped/2024/jpegmafia-i_lay_down_my_life_for_you.jpg" alt="I LAY DOWN MY LIFE FOR YOU">
+                            <div class="album-wr-info">
+                                <div class="album-name">I LAY DOWN MY LIFE FOR YOU</div>
+                                <div class="artist-name">JPEGMAFIA</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="hyperdrama" data-audio="audio_wrapped/2024/justice-neverender.mp3#81#116">
+                            <img src="albums_wrapped/2024/justice-hyperdrama.jpg" alt="Hyperdrama">
+                            <div class="album-wr-info">
+                                <div class="album-name">Hyperdrama</div>
+                                <div class="artist-name">Justice</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="wall-of-eyes" data-audio="audio_wrapped/2024/the_smile-under_our_pillows.mp3#56#100">
+                            <img src="albums_wrapped/2024/the_smile-wall_of_eyes.jpg" alt="Wall of Eyes">
+                            <div class="album-wr-info">
+                                <div class="album-name">Wall of Eyes</div>
+                                <div class="artist-name">The Smile</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/29127704?ref_id=B0496102-17F9-4C17-9426-06C17A2D0968" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="blue-lips" data-audio="audio_wrapped/2024/schoolboyq-thank_god_4_me.mp3#41#86">
+                            <img src="albums_wrapped/2024/schoolboyq-blue_lips.jpg" alt="BLUE LIPS">
+                            <div class="album-wr-info">
+                                <div class="album-name">BLUE LIPS</div>
+                                <div class="artist-name">ScHoolboy Q</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/30013269?ref_id=20252DC0-B29E-4DB0-B8D5-4B3DDE9E0890" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="clancy" data-audio="audio_wrapped/2024/twenty_one_pilots-next_semester.mp3#11#46">
+                            <img src="albums_wrapped/2024/twenty_one_pilots-clancy.jpg" alt="Clancy">
+                            <div class="album-wr-info">
+                                <div class="album-name">Clancy</div>
+                                <div class="artist-name">Twenty One Pilots</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31355321?ref_id=87B6AAAA-FCDC-4744-88EB-1DAD100B6743" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                    <a href="#" class="platform-btn telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир D -->
+                <div class="tier-row tier-d">
+                    <div class="tier-header">D</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="orquideas" data-audio="audio_wrapped/2024/kali_uchis-me_pongo_loca.mp3#39#69">
+                            <img src="albums_wrapped/2024/kali_uchis-orquideas.PNG" alt="ORQUÍDEAS">
+                            <div class="album-wr-info">
+                                <div class="album-name">ORQUÍDEAS</div>
+                                <div class="artist-name">Kali Uchis</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/32731188?ref_id=3F093A83-8837-4B27-90C6-DCCF6E34E713" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="charm" data-audio="audio_wrapped/2024/clairo-juna.mp3#83#116">
+                            <img src="albums_wrapped/2024/clairo-charm.PNG" alt="Charm">
+                            <div class="album-wr-info">
+                                <div class="album-name">Charm</div>
+                                <div class="artist-name">Clairo</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" target="_blank" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31994148?ref_id=4E31C46C-0859-46F2-AB82-B1F96DA7DA22" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="romance" data-audio="audio_wrapped/2024/fontaines_dc-bug.mp3#59#102">
+                            <img src="albums_wrapped/2024/fontaines_d_c-romance.jpg" alt="Romance">
+                            <div class="album-wr-info">
+                                <div class="album-name">Romance</div>
+                                <div class="artist-name">Fontaines D.C.</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/36213847?ref_id=14898657-FB72-4B03-AF7A-493D8B25F6FB" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="cowboy-carter" data-audio="audio_wrapped/2024/beyonce-ya_ya.mp3#62#102">
+                            <img src="albums_wrapped/2024/beyonce-cowboy_carter.jpg" alt="COWBOY CARTER">
+                            <div class="album-wr-info">
+                                <div class="album-name">COWBOY CARTER</div>
+                                <div class="artist-name">Beyoncé</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="god-said-no" data-audio="audio_wrapped/2024/omar_apollo-god_said_no.mp3#34#79">
+                            <img src="albums_wrapped/2024/omar_apollo-god_said_no.PNG" alt="God Said No">
+                            <div class="album-wr-info">
+                                <div class="album-name">God Said No</div>
+                                <div class="artist-name">Omar Apollo</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/31857970?ref_id=3C93EEC2-DBAC-43DE-BAB1-958D5242FD0D" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир E -->
+                <div class="tier-row tier-e">
+                    <div class="tier-header">E</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="sophie" data-audio="audio_wrapped/2024/sophie_gallop.mp3#68#100">
+                            <img src="albums_wrapped/2024/sophie-sophie.jpg" alt="SOPHIE">
+                            <div class="album-wr-info">
+                                <div class="album-name">SOPHIE</div>
+                                <div class="artist-name">SOPHIE</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/33439496?ref_id=6A22DDDC-6917-4975-8020-91D5569234CE" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="from-zero" data-audio="audio_wrapped/2024/linkin_park-overflow.mp3#110#145">
+                            <img src="albums_wrapped/2024/linkin_park-from_zero.PNG" alt="From Zero">
+                            <div class="album-wr-info">
+                                <div class="album-name">From Zero</div>
+                                <div class="artist-name">Linkin Park</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/33986148?utm_source=web&utm_medium=copy_link" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="eternal-sunshine" data-audio="audio_wrapped/2024/ariana_grande-the_boy_is_mine.mp3#47#80">
+                            <img src="albums_wrapped/2024/ariana_grande-eternal_sunshine.jpg" alt="eternal sunshine">
+                            <div class="album-wr-info">
+                                <div class="album-name">eternal sunshine</div>
+                                <div class="artist-name">Ariana Grande</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/30138829?utm_source=web&utm_medium=copy_link" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Тир F -->
+                <div class="tier-row tier-f">
+                    <div class="tier-header">F</div>
+                    <div class="tier-content">
+                        <div class="album-wr" data-album="loss-of-life" data-audio="audio_wrapped/2024/mgmt-mother_nature.mp3#37#72">
+                            <img src="albums_wrapped/2024/mgmt-loss_of_life.jpg" alt="Loss of Life">
+                            <div class="album-wr-info">
+                                <div class="album-name">Loss of Life</div>
+                                <div class="artist-name">MGMT</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="album-wr" data-album="short-n-sweet" data-audio="audio_wrapped/2024/sabrina_carpenter-espresso.mp3#64#98">
+                            <img src="albums_wrapped/2024/sabrina_carpenter-short_n_sweet.PNG" alt="Short n' Sweet">
+                            <div class="album-wr-info">
+                                <div class="album-name">Short n' Sweet</div>
+                                <div class="artist-name">Sabrina Carpenter</div>
+                            </div>
+                            <div class="platforms-modal">
+                                <div class="modal-content">
+                                    <a href="#" class="platform-btn youtube"></a>
+                                    <a href="#" class="platform-btn vk"></a>
+                                    <a href="https://music.yandex.ru/album/32948150?utm_source=web&utm_medium=copy_link" target="_blank" class="platform-btn yandex"></a>
+                                    <a href="#" class="platform-btn spotify"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Аудио элемент для предпрослушивания -->
         <audio id="album-audio" preload="auto"></audio>
@@ -786,6 +1098,4 @@ document.addEventListener('keydown', function(e) {
         });
     }
 });
-
 </script>
-

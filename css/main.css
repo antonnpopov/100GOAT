@@ -4,29 +4,31 @@
 
 @font-face {
     font-family: 'Oleho Senthor Trial';
-    src: url('../webfonts/OlehoSenthorTrial.otf') format('opentype'),
-         url('../webfonts/OlehoSenthorTrial.ttf') format('truetype');
+    src: url('/webfonts/OlehoSenthorTrial.otf') format('opentype'),
+         url('/webfonts/OlehoSenthorTrial-Regular.woff2') format('woff2'), /* Самый современный и быстрый */
+         url('/webfonts/OlehoSenthorTrial-Regular.woff') format('woff'), /* Для старых браузеров */
+         url('/webfonts/OlehoSenthorTrial.ttf') format('truetype'); /* Фолбэк на всякий случай */
     font-weight: normal;
     font-style: normal;
-    font-display: swap; /* чтобы текст не "моргал" при загрузке */
+    font-display: block; /* чтобы текст не "моргал" при загрузке */
 }
 
 @font-face {
     font-family: 'Novox Melted Stacked';
-    src: url('../webfonts/NovoxMeltedStacked.woff2') format('woff2'), /* Самый современный и быстрый */
-         url('../webfonts/NovoxMeltedStacked.woff') format('woff'),   /* Для старых браузеров */
-         url('../webfonts/NovoxMeltedStacked.ttf') format('truetype'); /* Фолбэк на всякий случай */
+    src: url('/webfonts/NovoxMeltedStacked.woff2') format('woff2'), /* Самый современный и быстрый */
+         url('/webfonts/NovoxMeltedStacked.woff') format('woff'),   /* Для старых браузеров */
+         url('/webfonts/NovoxMeltedStacked.ttf') format('truetype'); /* Фолбэк на всякий случай */
     font-weight: normal; /* Проверь, какой вес у шрифта */
     font-style: normal;
-    font-display: swap; /* Чтобы текст не "моргал" при загрузке */
+    font-display: block; /* Чтобы текст не "моргал" при загрузке */
 }
 
 @font-face {
     font-family: 'BreakSecret';
-    src: url('../webfonts/BreakSecret.otf') format('opentype'); /* Самый современный и быстрый */
+    src: url('/webfonts/BreakSecret.otf') format('opentype'); /* Самый современный и быстрый */
     font-weight: normal; /* Проверь, какой вес у шрифта */
     font-style: normal;
-    font-display: swap; /* Чтобы текст не "моргал" при загрузке */
+    font-display: block; /* Чтобы текст не "моргал" при загрузке */
 }
 
 /* -----------------------------------FONTS--------END----------------------------------------*/
@@ -958,7 +960,7 @@ html {
     font-size: 4.5rem;
     margin-bottom: 40px;
     font-family: 'BreakSecret', sans-serif;
-    color: #fff;
+    color: rgb(157, 4, 63);
     text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
@@ -1027,6 +1029,22 @@ html {
 .tier-d .tier-header { background: linear-gradient(135deg, #7209B7, #5A0A9C); }
 .tier-e .tier-header { background: linear-gradient(135deg, #EF476F, #D43A5E); }
 .tier-f .tier-header { background: linear-gradient(135deg, #073B4C, #052B38); }
+
+.empty-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 180px; /* Примерная высота альбома */
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
 
 /* Контентная часть (правые альбомы) - БОЛЬШЕ РАССТОЯНИЕ */
 .tier-content {
@@ -1259,6 +1277,22 @@ html {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.509l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.05 5.56-5.02c.242-.213-.054-.333-.373-.121l-6.87 4.326-2.96-.924c-.643-.204-.656-.643.136-.953l11.57-4.46c.537-.196 1.006.128.832.941z'/%3E%3C/svg%3E") !important;
 }
 
+/* YouTube Music иконка - идентичные настройки с VK */
+.platform-btn.youtube {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z'/%3E%3C/svg%3E");
+    background-color: #FF0000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%; /* ТАК ЖЕ КАК У VK */
+    border-radius: 20%; /* ТАК ЖЕ КАК У VK */
+}
+
+.platform-btn.youtube:hover {
+    background-color: #FF0000 !important;
+    transform: scale(1.1);
+    border-color: #7209B7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z'/%3E%3C/svg%3E") !important;
+}
 /* -----------------------КНОПКИ ПЛАТФОРМ ОФОРМЛЕНИЕ---------END--------------------------- */
 
 .close-modal {
@@ -1282,7 +1316,4 @@ html {
 
 .close-modal:hover {
     color: #FF6B6B;
-
 }
-
-

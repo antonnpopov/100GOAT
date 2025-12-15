@@ -921,8 +921,8 @@ body {
     }
     
     .album-number {
-        font-size: 28px;
-        min-width: 50px;
+        font-size: 20px;
+        min-width: 40px;
     }
     
     .album-cover-small {
@@ -948,7 +948,7 @@ body {
     }
     
     .position-number {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .position-label {
@@ -981,8 +981,8 @@ body {
     }
     
     .album-number {
-        font-size: 24px;
-        min-width: 45px;
+        font-size: 15px;
+        min-width: 30px;
     }
     
     .album-cover-small {
@@ -1018,7 +1018,7 @@ body {
     }
     
     .position-number {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .position-label {
@@ -1051,8 +1051,8 @@ body {
     }
     
     .album-number {
-        font-size: 22px;
-        min-width: 40px;
+        font-size: 15px;
+        min-width: 30px;
     }
     
     .album-cover-small {
@@ -1707,14 +1707,11 @@ html {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    /*color: white;*/
     text-decoration: none;
     border-radius: 20%;
-    /*font-size: 1rem;*/
     font-weight: bold;
     transition: all 0.2s ease;
     border: 1px solid transparent;
-    /*text-transform: uppercase;*/
     margin-bottom: 6px; /* ← Отступ снизу для каждой кнопки */
 }
 
@@ -1737,7 +1734,7 @@ html {
     background-color: #4c75a300;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
 }
 
 /* Яндекс Музыка SVG иконка */
@@ -2032,7 +2029,7 @@ body {
     }
     
     .rainbow-letters {
-        font-size: 120px;
+        font-size: 135px;
     }
     
     .hero--info-wrapped h2 {
@@ -2147,11 +2144,11 @@ body {
     }
     
     .rainbow-letters {
-        font-size: 80px;
+        font-size: 100px;
     }
     
     .rainbow-letters span {
-        margin: 0 -2px;
+        margin: 0 -1px;
     }
     
     .text-buttons-container {
@@ -2248,9 +2245,10 @@ body {
     }
     
     .platforms-modal {
-        left: 140px;
+        left: 20px;
         width: 18px;
         padding: 4px;
+        border-radius: 10px;
     }
     
     .platform-btn {
@@ -2379,7 +2377,7 @@ body {
     }
     
     .platforms-modal {
-        left: 120px;
+        left: 20px;
         width: 16px;
         padding: 3px;
     }
@@ -2454,7 +2452,7 @@ body {
     }
     
     .platforms-modal {
-        left: 110px;
+        left: 20px;
     }
 }
 
@@ -2465,7 +2463,7 @@ body {
     }
     
     .hero--info-wrapped {
-        padding-top: 50px;
+        padding-top: 60px;
         min-height: 200px;
     }
     
@@ -2487,7 +2485,7 @@ body {
     
     .tier-content {
         padding: 10px;
-        gap: 20px;
+        gap: 30px;
     }
     
     .album-wr {

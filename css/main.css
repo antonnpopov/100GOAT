@@ -1432,14 +1432,6 @@ header .nav-wrapped ul li.btn a:hover {
     box-shadow: 1px 1px 1px rgba(247, 245, 147, 0.3);
 }
 
-.year-buttons {
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-    margin-left: 20px; /* Уменьшаем отступ слева - сдвигаем левее */
-    align-items: stretch;
-    gap: 15px; /* Расстояние между кнопками */
-}
 
 /* Текст внутри кнопки */
 .hero--info-wrapped .btn a {
@@ -2090,7 +2082,7 @@ body {
     }
     
     .platforms-modal {
-        left: 160px;
+        left: 120px;
     }
     
     .empty-notice {
@@ -2389,12 +2381,15 @@ body {
     }
     
     /* Переопределяем размер иконок для маленьких экранов */
-    .platform-btn.vk,
     .platform-btn.youtube,
     .platform-btn.spotify,
     .platform-btn.telegram,
     .platform-btn.yandex {
         background-size: 80%;
+    }
+
+    .platform-btn.vk {
+        background-size: 100%
     }
     
     .empty-notice {
@@ -2463,16 +2458,48 @@ body {
     }
     
     .hero--info-wrapped {
-        padding-top: 60px;
+        padding-top: 100px;
         min-height: 200px;
     }
     
     .rainbow-letters {
-        font-size: 60px;
+        font-size: 70px;
     }
     
     .text-buttons-container {
         margin-top: 30px;
+        /* Основное изменение: делаем flex-контейнер */
+        display: flex;
+        align-items: flex-start; /* или center, если нужно по вертикали */
+        justify-content: space-between; /* текст слева, кнопки справа */
+        width: 100%;
+        padding: 0 40px; /* отступы слева и справа */
+        box-sizing: border-box;
+    }
+
+    .text-content {
+        flex: 1; /* занимает доступное пространство */
+        text-align: left;
+        padding-left: 20px; /* уменьшили, так как есть padding у родителя */
+        margin-right: 0;
+        /* Убираем старый margin-right, так как теперь есть justify-content */
+        max-width: 60%;
+    }
+
+    .year-buttons {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        align-items: center;
+        gap: 15px;
+        /* Убираем старый padding-left */
+        padding-left: 0;
+        /* Автоматический отступ слева прижимает кнопки к правому краю */
+        margin-left: auto;
+        /* Или фиксированный отступ, если нужно не до самого края */
+        /* margin-left: 40px; */
+        flex-shrink: 0; /* не сжимаются */
+        width: 30%;
     }
     
     .tier-list-section {
@@ -2495,6 +2522,10 @@ body {
     .album-wr img {
         width: 120px;
         height: 120px;
+    }
+
+    .platforms-modal {
+        left: 100px;
     }
 }
 
@@ -2572,6 +2603,10 @@ body {
     .album-wr img {
         width: 160px;
         height: 160px;
+    }
+
+    .platforms-modal {
+        left: 140px;
     }
 }
 
